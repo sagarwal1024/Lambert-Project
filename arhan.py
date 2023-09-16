@@ -1,2 +1,0 @@
-# Arhan
-print("Hello World")
