@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600&display=swap');
+/* Color Palette */
+:root {
+  --blue: #26547C;
+  --red: #EF476F;
+  --yellow: #FFD166;
+  --green: #06D6A0;
+  --white: #FCFCFC;
+}
+
+/*basic setup*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+
+  color:white;
+  font-family: 'Edu SA Beginner', cursive;
+  font-weight: 500;
+}
+
+/* navbar */
+nav{
+  background: var(--green);
+  height: 80px;
+  width: 100%;
+}
+
+label.logo {
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active, a:hover{
+  color: var(--yellow);
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 500px;
+    background-color: #333; 
+    color: #fff;
+    padding: 20px;
+}
+
+
+/* Style for the input sections */
+.input-section {
+  margin-top: 20px;
+}
+
+/* Style for the labels above the inputs */
+.input-section label {
+  display: block; 
+  margin-bottom: 5px; 
+  font-size: 18px;
+}
+
+/* Style for the inputs within the input sections */
+.input-section input {
+  width: 100%; 
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 10px; 
+  outline: none; 
+}
+
+/* Style for the inputs' placeholder text */
+.input-section input::placeholder {
+  color: #999;
+}
+
+/* Map Display */
+
+.content {
+  flex-grow: 1;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
